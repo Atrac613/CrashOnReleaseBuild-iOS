@@ -57,6 +57,7 @@
         */
         
         // Crash on Optimization Level Fastest, Smallest [-Os]
+        // Output: [__NSArrayI retain]: message sent to deallocated instance 0x806d120
         params = [NSArray arrayWithObject:encodeString];
         
         [self performSelectorOnMainThread:@selector(completedEncodeOperation:) withObject:params waitUntilDone:NO];
